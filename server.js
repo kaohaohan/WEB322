@@ -15,7 +15,7 @@ const legoSets = require("./modules/legoSets");
 console.log("legoSets", legoSets);
 const app = express();
 //express 可以用public folder的東西
-app.use(express.static("public"));
+app.use(express.static(__dirname + "/public"));
 //串資料夾路徑 path
 const path = require("path");
 const port = 3001;
